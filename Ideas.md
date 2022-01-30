@@ -151,6 +151,9 @@
 - cloning
 - deployment
   - setting first run / on boot
+  - rufus
+  - ventoy - https://www.ventoy.net/en/index.html
+  - clonezilla
 - logging & audits
 - security & patches
   - CVEs
