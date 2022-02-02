@@ -67,13 +67,17 @@ Usage guide for user creation script:
 
 You should have a folder in your repo that contains:
 
-- user administration script
+- user administration script(s)
 - README.md
 
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to your submission
   - URL should look like: https://github.com/WSU-kduncan/ceg2410-YOURGITHUBUSERNAME/blob/main/Linux/Project1
+
+## Extra Credit - +10%
+
+Instead of calling functions (nice, but hard to remember) create a menu that asks what the user would like to do.
 
 ## Resources
 
