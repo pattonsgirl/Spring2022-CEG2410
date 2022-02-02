@@ -32,7 +32,7 @@ Create a script that performs the following functions:
 ### remove-single
 
 - Prompt user to enter a username
-- Delete the user account
+- Delete the user account & home directory
 - Remove the user from group
 
 ### add-bulk
@@ -51,7 +51,7 @@ Create a script that performs the following functions:
 
 - Prompt the user to enter a filename containing user names
 - For each user in the file:
-  - Delete the user account
+  - Delete the user account & home directory
   - Remove the user from group
 
 ## Documentation
@@ -78,6 +78,10 @@ You should have a folder in your repo that contains:
 ## Extra Credit - +10%
 
 Instead of calling functions (nice, but hard to remember) create a menu that asks what the user would like to do.
+
+## Rubric
+
+[Rubric](Rubric.md)
 
 ## Resources
 
