@@ -1,0 +1,17 @@
+---
+
+linux:	
+  hosts:
+    aws-ubuntu:
+      ansible_host: 52.4.33.182
+      ansible_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: /home/kduncan/keys/ceg2410-key.pem
+
+windows:
+  hosts:
+
+allsystems:
+  children:
+    linux:
+    windows:
