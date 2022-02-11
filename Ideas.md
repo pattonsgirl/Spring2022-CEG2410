@@ -104,6 +104,10 @@
 
 ## In-class
 
+- setup RAID - up to one drive failure acceptable (2, 3, 5)
+  - 3 x 2 GB storage partitions
+    https://www.pugetsystems.com/labs/support-software/Configuring-Software-RAID-within-Windows-10-2124/
+    https://hetmanrecovery.com/recovery_news/how-to-create-software-raid-on-windows-server.htm
 - setup database
 - accounts
 - backup & restore
@@ -111,8 +115,6 @@
 ## Project
 
 - AWS system
-- 3 x 2 GB storage partitions
-- setup RAID - up to one drive failure acceptable (2, 3, 5)
 - setup NFS OR **samba**
   - https://www.linuxbabe.com/ubuntu/install-samba-server-file-share
   - https://linuxize.com/post/how-to-install-and-configure-an-nfs-server-on-ubuntu-20-04/
