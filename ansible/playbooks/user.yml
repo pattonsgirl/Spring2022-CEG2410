@@ -24,4 +24,9 @@
         group: devs
         createhome: yes        # Defaults to yes
         home: /home/kduncan    # Defaults to /home/<username>
+    - name: creating / checking group 'devs' existence
+      group:
+        name: devs
+        gid: 2042
+        state: present
 
