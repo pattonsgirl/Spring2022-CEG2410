@@ -2,8 +2,6 @@
 
 ## Project Setup
 
-TODO: change link to course link
-
 For this project you need access to your AWS console. [Return to here and click "Start Lab"](https://awsacademy.instructure.com/courses/13276/modules/items/1137826). **Once the icon next to "AWS" is green, click "AWS" to open the console.**
 
 Create volumes in AWS as dicussed in class. 3 volumes of 4GB each is a good starting point - modify based on the type of RAID array you implement for the project.
@@ -67,6 +65,10 @@ In `RAID.md` document:
 
 - In the Pilot Dropbox, paste the URL to your submission
   - URL should look like: https://github.com/WSU-kduncan/ceg2410-YOURGITHUBUSERNAME/blob/main/Linux/RAID.md
+
+## Rubric
+
+[Rubric](Rubric.md)
 
 ## Resources
 
