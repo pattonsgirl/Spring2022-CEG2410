@@ -10,7 +10,7 @@ Midterm: Friday, 2/25
 - 1 attempt, 1 hour once started
 - Open note, open terminal
 - No class - only exam.
-- I will be in Russ 346 from 9:00 to 10:00 AM if you want to take the exam in the room
+- I will be in Russ 355 from 9:00 to 10:00 AM if you want to take the exam in the room
 
 ## Topic List:
 
