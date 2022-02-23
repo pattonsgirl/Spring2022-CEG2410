@@ -1,63 +1,82 @@
-# Project 2 - NOT FINALIZED
+# Project 2
 
-File Sharing (is Caring)
+## Project Setup
 
-## Assignment Notes
+For this project you need access to your AWS console. [Return to here and click "Start Lab"](https://awsacademy.instructure.com/courses/13276/modules/items/1137826). **Once the icon next to "AWS" is green, click "AWS" to open the console.**
 
-For this project you need access to your AWS console. [Return to here and click "Start Lab"](https://awsacademy.instructure.com/courses/13269/modules/items/1137325). **Once the icon next to "AWS" is green, click "AWS" to open the console.**
+Create volumes in AWS as dicussed in class. 3 volumes of 4GB each is a good starting point - modify based on the type of RAID array you implement for the project.
 
-In your GitHub Classrooms repo, in the `Linux` folder, create a new folder named `Project2`. The deliverables for this project will be documenation and screenshots, so you are welcome to work in your repo wherever you are comfortable. I would float towards VSCode myself.
+In the Linux folder, a file named `RAID.md` in your GitHub Classrooms repo. This project is mostly documentation, so you are welcome to work wherever you are comfortable. I would float towards VSCode myself.
 
-## Part 1 - create a `samba` share
+## Part 1 - craft a RAID
 
-1. Install `samba` on your AWS Ubuntu instance.
-2. Create a folder in the `/` directory named `share`.
-3.
+Craft a RAID that can recover from a minimum of one disk failure.
 
-## Part 2 - manange the users
+In `RAID.md` document:
 
-## Part X - firewalls
+- RAID type choosen
+- Summary of pros and cons for type chosen
+- Command to build array
 
-Strictly speaking, we only need to access a few ports on the network and from a handful of trusted networks.
+## Part 2 - get info
 
-- Ports:
-  - TCP 22
-  - TCP 139
-  - TCP 445
-  - UDP 137
-  - UDP 139
-- Trusted networks:
-  - Your home public IP: `curl ipinfo.io`
-  - Wright State: `130.108.0.0/16`
+Verify that your RAID is created and all disks are healthy
 
-## Part 3 - connect to share
+In `RAID.md` document:
 
-You ahve it set up, but how do you connect?
+- command(s) to check RAID status
+- screenshot of what it looks like
+- How to read the output of the command(s)
 
-For this part, choose at **minimum** two operating systems and try connecting to your `samba` share. In your documentation section, detail how to connect.
+## Part 3 - mount to directory
 
-Note: WSL2 Ubuntu does count as one OS - Windows would count as a second.
+Mount your RAID to a logical folder. For example, in class we discussed `/mnt` or creating a `/share` directory
 
-## Part 4 - documentation
+In `RAID.md` document:
 
-In your `Project2` folder, create a `README.md` file with the following documentation.
+- command(s) to create a filesystem and `mount` RAID device to a folder
+- verifying the RAID device is mounted
+  - what commands can prove it
 
-### How to setup a samba share
+## Part 4 - break it
 
-- Installation:
-- Configuration:
-- Allowing users:
-  - **include screenshot of configuring users**
-- Connecting to share:
-  - Details on how to connect + useful screenshot(s) - remember 2 OSes at minimum
+Pretend that one of the disks has been behaving oddly, so needs to be replaced. Mark the disk of your choosing as `fail`ing and safely `remove` it from the RAID device configuration.
+
+In `RAID.md` document:
+
+- command to mark a disk as failing
+- command to remove failing disk with mdadm
+- effect on RAID device
+
+## Part 5 - rebuild it
+
+In `AWS` in the `Volume` management menu, create a new volume (4 GB) and attach it to your instance.
+
+Repair the RAID array using the new device.
+
+In `RAID.md` document:
+
+- command to `add` new device to RAID
+- verifying that the RAID device is being rebuilt
+  - what commands can prove it
+- screenshot result of rebuilt RAID array
+
+## Submission
+
+- In the Pilot Dropbox, paste the URL to your submission
+  - URL should look like: https://github.com/WSU-kduncan/ceg2410-YOURGITHUBUSERNAME/blob/main/Linux/RAID.md
+
+## Rubric
+
+[Rubric](Rubric.md)
 
 ## Resources
 
-- https://www.linuxbabe.com/ubuntu/install-samba-server-file-share
-- https://linuxize.com/post/how-to-install-and-configure-samba-on-ubuntu-18-04/#connecting-to-a-samba-share-from-linux
+If you guys share resources via Discord, I'll try to remmeber to add them here. Here's one to get started:
 
-## Rabbit holes
+- [digitalocean - how to manage RAID arrays with mdadm](https://www.digitalocean.com/community/tutorials/how-to-manage-raid-arrays-with-mdadm-on-ubuntu-16-04)
 
-- https://www.redhat.com/sysadmin/samba-windows-linux
-- https://www.techrepublic.com/article/how-to-connect-to-linux-samba-shares-from-windows-10/
-- https://www.thewindowsclub.com/system-error-67-has-occurred-the-network-name-cannot-be-found
+## Common Problems:
+
+- Where did `/dev/md0` go?
+  - After a reboot, the array may now be called `md127` It still works, all is still well.
