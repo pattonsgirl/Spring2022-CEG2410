@@ -2,6 +2,14 @@
 
 ## Spring 2022
 
+What problem does a directory service solve?
+
+Our context so far:
+
+We have manually created users on a system (one at a time and in bulk via a script). When a user is created on a single system, the settings are only on that machine. Users need to be added to each machine.
+
+Unless we utilize a directory service. Machines can be configured to query this directory server which holds user account information, access control for systems, and more. User accounts are no longer system dependent - as long as the account exists on the directory server, a user can authenticate or request access to resources.
+
 ## Da Rules
 
 Midterm: Friday, 2/25
