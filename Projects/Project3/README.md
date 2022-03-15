@@ -1,5 +1,10 @@
 # Project 3
 
+- [Set Up HTTP](#Set-Up-HTTP)
+- [Get Certified](#Get-Certified)
+- [Set Up HTTPS](#Set-Up-HTTPS)
+- [Rubric](Rubric.md)
+
 For this project you need access to your AWS console. [Return to here and click "Start Lab"](https://awsacademy.instructure.com/courses/13276/modules/items/1137826). **Once the icon next to "AWS" is green, click "AWS" to open the console.**
 
 In the `Linux` folder, create a file named `HTTPS.md` in your GitHub Classrooms repo. This project is mostly documentation of what you are implementing, so you are welcome to work wherever you are comfortable. I would float towards VSCode myself.
