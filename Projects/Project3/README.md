@@ -3,6 +3,7 @@
 - [Set Up HTTP](#Set-Up-HTTP)
 - [Get Certified](#Get-Certified)
 - [Set Up HTTPS](#Set-Up-HTTPS)
+- [Submission](#Submission)
 - [Rubric](Rubric.md)
 
 For this project you need access to your AWS console. [Return to here and click "Start Lab"](https://awsacademy.instructure.com/courses/13276/modules/items/1137826). **Once the icon next to "AWS" is green, click "AWS" to open the console.**
@@ -67,6 +68,11 @@ Don't forget to cite your sources at the end. Links to sites you used is suffici
    - Proving that the changes work
      - Think, "What are you doing to test?"
    - **screenshot** of site working with HTTPS
+
+## Submission
+
+- In the Pilot Dropbox, paste the URL to your submission
+  - URL should look like: https://github.com/WSU-kduncan/ceg2410-YOURGITHUBUSERNAME/blob/main/Linux/HTTPS.md
 
 ## Things to Check
 
