@@ -78,3 +78,15 @@ Don't forget to cite your sources at the end. Links to sites you used is suffici
 
 - Check your Security Group rules
   - make sure the right ports are open from the right places
+
+## Suggested Resources
+
+- [techexpert.tips - enable HTTPS apache](https://techexpert.tips/apache/enable-https-apache/)
+  - Uses rewrite engine
+- [DigitalOcean - self signed cert in apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04)
+  - Uses redirect
+
+**Blackballed resources - do not use**
+
+- [cloudsavvyit](https://www.cloudsavvyit.com/1314/how-to-create-and-use-self-signed-ssl-on-apache/)
+  - insufficient documenation, use techexpert tips linked above
