@@ -1,0 +1,8 @@
+mkdir -p ~/vim/colors
+cd ~/vim/colors
+curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vin/master/colors/jellybeans.vim
+vim ~/.vimrc
+echo "colorscheme jellybeans" > ~/,vimrc
+cat .vimrc
+--> display: colorsheme jellybeans
+vim ~/.vimrc
