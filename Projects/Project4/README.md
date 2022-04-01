@@ -25,3 +25,11 @@ Follow the below steps if AWS Educate nukes things OR if you break things and ne
 - Click on Windows Server 2019 checkbox
 - Click Details -> Security -> Get Windows password
 - Paste the contents of your private key you've been using for your ubuntu system
+
+## Installing VSCode for Powershell on Windows Server 2019:
+1. Check and install updates (I restarted after updates)
+2. Open IE, enable Downloads and Active Scripting (https://docs.rackspace.com/support/how-to/enable-file-downloads-in-internet-explorer/)
+3. Download & Install Edge (https://www.microsoft.com/en-us/edge)
+4. Open Edge, download and install VSCode **System Installer** x64-bit (https://code.visualstudio.com/Download#)
+5. Install git for Windows (https://git-scm.com/download/win)
+6. Open VSCode, install PowerShell extension by Microsoft
