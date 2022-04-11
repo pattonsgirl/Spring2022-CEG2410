@@ -1,0 +1,24 @@
+FirstName,LastName,SamAccountName,OU1,Group1,Group2,Group3
+Sam,Adams,sadams,domain Users,Users,Engineers
+Bob,Baker,bbaker,domain Users,Users,Engineers
+John,Clark,jclark,domain Users,Users,Engineers
+Jim,Davis,jdavis,domain Users,Users,Engineers,Developers
+Sue,Evans,sevans,domain Users,Users,Engineers,Developers
+Mabel,Frank,mfrank,domain Users,Users,Developers,Engineers
+Kylie,Ghosh,kghosh,domain Users,Users,Developers,Engineers
+Sammy,Hills,shills,domain Users,Users,Developers
+Steve,Irwin,sirwin,domain Users,Users,Developers
+Jessy,Jones,jjones,domain Users,Users,Developers
+Kevin,Klein,kklein,domain Users,Users,Developers
+Max,Lopez,mlopez,domain Users,Users,Developers
+Sarah,Mason,smason,domain Users,Users,Developers
+Frank,Nalty,fnalty,domain Users,Users,Administrators
+Izzie,Ochoa,iochoa,domain Users,Users,Account Operators
+Kelly,Patel,kpatel,domain Users,Users,Account Operators
+Liz,Quinn,lquinn,domain Users,Users
+Owen,Reily,oreily,domain Users,Users
+Taylor,Trott,ttrott,domain Users,Users,Finance
+James,Usman,jusman,domain Users,Users,Finance
+Elsie,Smith,esmith,domain Users,Users,HR,Finance
+Waldo,Valdo,wvaldo,domain Users,Users,HR
+Griffin,White,gwhite,domain Users,Users,HR
