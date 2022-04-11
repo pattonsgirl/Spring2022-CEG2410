@@ -73,7 +73,8 @@ Create the following domain local Security Groups:
 
 - project_repos_RW - Read / Write access to project repositories
 - finance_RW - Read / Write access to finance share
-- Engineers - can log on to Servers
+- onboarding_R - Read access to onboarding documents
+- server_access - can log on to Servers
 
 ### Joining Users
 
@@ -101,7 +102,7 @@ Create the following Group Policies and apply as required.
 - Lock out Workstations after 15 minutes of inactivity.
 - Prevent execution of programs on computers in Secure OU
 - Disable Guest account login to computers in Secure OU
-- One more...
+- Allow server_access to sign on to Servers
 
 ## Submission
 
