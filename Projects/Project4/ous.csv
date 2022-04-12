@@ -1,0 +1,11 @@
+Name,Path
+duncan Users,"cn=ad,cn=duncan,cn=org"
+Finance,"OU=duncan Users,cn=ad,cn=duncan,cn=org"
+HR,"OU=duncan Users,cn=ad,cn=duncan,cn=org"
+Engineers,"OU=duncan Users,cn=ad,cn=duncan,cn=org"
+Developers,"OU=duncan Users,cn=ad,cn=duncan,cn=org"
+duncan Computers,"cn=ad,cn=duncan,cn=org"
+Conference,"OU=duncan Computers,cn=ad,cn=duncan,cn=org"
+Secure,"OU=duncan Computers,cn=ad,cn=duncan,cn=org"
+Workstations,"OU=duncan Computers,cn=ad,cn=duncan,cn=org"
+duncan Servers,"cn=ad,cn=duncan,cn=org"
