@@ -1,6 +1,8 @@
 # Project 4 - NOT FINALIZED
 
 - [Getting Started & Notes](#getting-started--notes)
+- [Setup AD DC](#setup-ad-dc)
+- [AD Structure](#ad-structure)
 - [Submission](#submission)
 - [Rubric](Rubric.md)
 
@@ -50,7 +52,7 @@ Follow the below steps if AWS Educate nukes things OR if you break things and ne
 - Domain Controller Name:
 - Domain DNS IP:
 
-## Users, Computers and Groups
+## AD Structure
 
 ### Create OUs
 
@@ -75,6 +77,8 @@ Create the following domain local Security Groups:
 - finance_RW - Read / Write access to finance share
 - onboarding_R - Read access to onboarding documents
 - server_access - can log on to Servers
+- dev_eng_admins - IT admins to handle Developer and Engineer accounts
+- hr_finance_admins - IT admins to handle HR and finance accounts
 
 ### Joining Users
 
