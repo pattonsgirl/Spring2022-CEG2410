@@ -59,16 +59,16 @@ Follow the below steps if AWS Educate nukes things OR if you break things and ne
 
 Create the following Organizational Units - Provide screenshot proof:
 
-- [Domain] Computers - client / user machines
-  - Conference - publicly accessible kiosks and presentation devices
-  - Secure - machines for HR and finance users
-  - Workstations - machines for devs and engineers
-- [Domain] Servers - servers for org (data shares, repo hosts, HPCs)
-- [Domain] Users
-  - Finance - can log on to Secure computers, managed by hr_finance_admins group
-  - HR - can log on to Secure computers, managed by hr_finance_admins group
-  - Engineers - can log on to Workstations, managed by dev_eng_admins
-  - Developers - can log on to Workstations, managed by dev_eng_admins
+- `[Domain] Computers` - client / user machines
+  - `Conference` - publicly accessible kiosks and presentation devices
+  - `Secure` - machines for HR and finance users
+  - `Workstations` - machines for devs and engineers
+- `[Domain] Servers` - servers for org (data shares, repo hosts, HPCs)
+- `[Domain] Users`
+  - `Finance` - can log on to Secure computers, managed by hr_finance_admins group
+  - `HR` - can log on to Secure computers, managed by hr_finance_admins group
+  - `Engineers` - can log on to Workstations, managed by dev_eng_admins
+  - `Developers` - can log on to Workstations, managed by dev_eng_admins
 
 **Extra Credit (10%)** Provide a scripted solution that generates these. There may be a sample `.csv` file in this folder
 
@@ -84,13 +84,13 @@ Using a Powershell script, join the users in [users.csv](users.csv) to your doma
 
 ### Joining Computers
 
-Create another Windows Server instance in AWS on your VPC. Write the steps needed to join the Windows Server to the Domain in the [Domain] Computers OU. Provide screenshot proof of success.
+Create another Windows Server instance in AWS on your VPC. Write the steps needed to join the Windows Server to the Domain in the `[Domain] Computers` OU. Provide screenshot proof of success.
 
 - Resources:
   - https://adamtheautomator.com/add-computer-to-domain/
   - Don't forget that DNS step ;)
 
-**Extra Credit (10%)**: Join a Ubuntu Server to the Domain in the [Domain] Computers OU. Link to resources used, note anything you needed to do that was unique, and provide screenshot proof of success.
+**Extra Credit (10%)**: Join a Ubuntu Server to the Domain in the `[Domain] Computers` OU. Link to resources used, note anything you needed to do that was unique, and provide screenshot proof of success.
 
 - Guides with potential:
   - https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/
@@ -100,13 +100,13 @@ Create another Windows Server instance in AWS on your VPC. Write the steps neede
 
 Create the following Security Groups and define where they should be within the OUs based on their roles:
 
-- project_repos_RW - users who have Read / Write access to project repositories
-- finance_RW - users who have Read / Write access to finance share
-- onboarding_R - users who have Read access to onboarding documents
-- server_access - users who can log on to Servers
-- dev_eng_admins - IT admins to handle Developer and Engineer accounts
-- hr_finance_admins - IT admins to handle HR and finance accounts
-- remote_workstation - Group of workstations that allow RDP connections
+- `project_repos_RW` - users who have Read / Write access to project repositories
+- `finance_RW` - users who have Read / Write access to finance share
+- `onboarding_R` - users who have Read access to onboarding documents
+- `server_access` - users who can log on to Servers
+- `dev_eng_admins` - IT admins to handle Developer and Engineer accounts
+- `hr_finance_admins` - IT admins to handle HR and finance accounts
+- `remote_workstation` - Group of workstations that allow RDP connections
 
 ## OUs & GPOs
 
@@ -133,7 +133,7 @@ Join at least one person to the `hr_finance_admins` and `eng_dev_admins` groups,
 
 Document how to delagate control of an OU to a group, which OUs they now delegate, and what permissions they were given (and why you think the scope is appropriate)
 
-- Resource
+- Resources
 - https://theitbros.com/active-directory-organizational-unit-ou/
 
 ## Submission
