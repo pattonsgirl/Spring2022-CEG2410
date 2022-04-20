@@ -37,6 +37,49 @@ Midterm: Friday, 4/29
   - key pairs (public vs private keys)
     - private keys are just for me
     - public keys are added / uploaded to the machine I am connecting to
+- OSI model and TCP / IP model of networking
+  - application
+    - HTTP
+    - HTTPS
+      - Certificate Authorities & browser trust
+    - SSH
+      - private / public key pairs, `config` & `authorized_keys` files
+    - SFTP
+  - transport
+    - ports
+    - UDP
+    - TCP
+  - network / internet
+    - IP addresses (v4 and v6)
+    - DNS to resolve IP addresses
+    - subnets
+    - routes
+    - NAT
+  - data / link
+    - MAC
+    - NIC
+  - physical
+- Ports vs sockets
+  - Application opens a socket which is connected to a port
+- VPN
+- Pieces of a network
+  - hosts (devices)
+  - routers
+  - switches
+  - ISPs
+- Firewalls
+  - inbound / ingress
+  - outbound / egress
+  - common sense rules & trusted networks
+
+### Webservers:
+
+- installing an HTTP server
+- controlling a service (systemctl)
+- configuration files
+- how TLS / SSL works
+- configuring HTTPS
+- Certificate authorities (and validation) vs self signed certs
 
 ### Linux management:
 
@@ -72,6 +115,8 @@ Midterm: Friday, 4/29
   - mirroring
   - parity
   - types: 0, 1, 4, 5, 6, ~~10~~
+- backup policies & the 3-2-1 rule
+- storage strategies (NAS, cloud)
 
 ### User Accounts & Directory Services
 
@@ -84,6 +129,12 @@ Midterm: Friday, 4/29
   - AD
   - LDAP
   - Allow heirarchical structure of permissions
+- Active Directory
+  - domain controllers
+  - users, computers, groups
+  - organizational units and group policy objects
+  - structure / organizing AD decisions
+- Powershell survival skills
 
 ### Task Automation
 
