@@ -1,0 +1,24 @@
+FirstName,LastName,SamAccountName,OU1,OU2
+Sam,Adams,sadams,"duncan Users",Engineers
+Bob,Baker,bbaker,"duncan Users",Engineers
+John,Clark,jclark,duncan Users,Engineers
+Jim,Davis,jdavis,duncan Users,Developers
+Sue,Evans,sevans,duncan Users,Developers
+Mabel,Frank,mfrank,duncan Users,Developers
+Kylie,Ghosh,kghosh,duncan Users,Developers
+Sammy,Hills,shills,duncan Users,HR
+Steve,Irwin,sirwin,duncan Users,HR
+Jessy,Jones,jjones,duncan Users,Finance
+Kevin,Klein,kklein,duncan Users,Finance
+Max,Lopez,mlopez,duncan Users,Finance
+Sarah,Mason,smason,duncan Users,Developers
+Frank,Nalty,fnalty,duncan Users,Developers
+Izzie,Ochoa,iochoa,duncan Users,Developers
+Kelly,Patel,kpatel,duncan Users,Engineers
+Liz,Quinn,lquinn,duncan Users,Engineers
+Owen,Reily,oreily,duncan Users,Engineers
+Taylor,Trott,ttrott,duncan Users,Engineers
+James,Usman,jusman,duncan Users,Engineers
+Elsie,Smith,esmith,duncan Users,Engineers
+Waldo,Valdo,wvaldo,duncan Users,Developers
+Griffin,White,gwhite,duncan Users,Developers
