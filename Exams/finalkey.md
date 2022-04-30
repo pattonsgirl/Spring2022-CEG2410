@@ -74,7 +74,6 @@ What is the most reasonable action to give the user "joe" permissions to read an
 
 - IP `127.0.0.1` is on the localhost "interface" (lo) It is not a network accessible IP - it is not within a private subnet other machines on the subnet can query; it is not accessible by any public IP. Addresses that start with `127` can only be accessed by the machine.
 - **False**. If an instance is configured to host a website, you browser can only access the site via the instance's public IP OR a domain name associated with the public IP of the instance.
-- TODO: consider dropping
 
 11. I have changed configuration files on a server. In order to maintain uptime, what it the best strategy apply the configuration change?
 
@@ -92,16 +91,25 @@ What is the most reasonable action to give the user "joe" permissions to read an
 
 13. Provide at least one advantage and one disadvantage to a RAID 0.
 
-- Advantage: data is striped across disks, so increase in read and write speed
+- Advantage: data is striped across disks, so increase in read and write speed.
 - Disadvantage: no fault tolerance
-- TODO: grade
 
 14. Tools for managing Active Directory are consistent and available across all versions of Windows Server.
 
 - False. Different tools and features sets are available only in certian versions of Windows Server running AD
 
-15. TODO
-16. TODO
+15. Use the internet. Find a set of instructions to install singularity on Linux. Summarize the steps and provide the link.
+
+- https://sylabs.io/guides/3.0/user-guide/installation.html
+
+16. Use the internet. Find a guide to create a GPO that will disallow removable media drives, such as, DVDs, CDs, and Floppy Drives. Summarize the steps and provide a link.
+
+- https://www.mustbegeek.com/block-usb-or-removable-devices-using-group-policy/
+- http://woshub.com/how-to-disable-usb-drives-using-group-policy/
+- https://www.windowscentral.com/how-disable-access-removable-storage-devices-windows-10
+- https://www.prajwaldesai.com/how-to-disable-usb-devices-using-group-policy/
+- https://blog.emsisoft.com/en/35347/how-to-use-a-group-policy-object-to-block-access-to-usb-storage-devices/
+- https://docs.microsoft.com/en-us/troubleshoot/windows-server/group-policy/adm-template-disable-drivers
 
 17. If the PowerShell execution policy is set to Restricted, then only scripts signed by trusted publishers can run.
 
@@ -112,7 +120,10 @@ What is the most reasonable action to give the user "joe" permissions to read an
 
 - CA - Certificate Authority
 
-19. TODO
+19. Why shouldn't ports for SSH or RDP be open to the world?
+
+- Solid student answers:
+- Ports for SSH or RDP shouldn't be open to the world because these are protocols used to connect to remote machines and use them. If these ports are open to the world, meaning that traffic from any place can come in through those ports and protocols, anyone can attempt to connect to a server using those ports. While this doesn't mean that someone will be able to connect successfully, leaving open ports 22 and 3389, the ones for SSH and RDP, takes away a layer of security for a server. As a result, it's always good security practice to leave ports for SSH and RDP open to only traffic from trusted networks.
 
 20. Write a command to install a package of your choice on Ubuntu Linux.
 
